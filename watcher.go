@@ -103,6 +103,7 @@ func (fw *Watcher) watchRoutine(tick <-chan time.Time, stop chan bool, handler W
 			}
 		default:
 		}
+		time.Sleep(50 * time.Millisecond)
 	}
 }
 
